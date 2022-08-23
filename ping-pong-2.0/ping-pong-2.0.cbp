@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ping-pong-2.0" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ping-pong-2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add library="sfml-audio-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ping-pong-2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Users/saabi/OneDrive/Documents/SFML-2.5.1/include" />
+			<Add directory="C:/Users/saabi/OneDrive/Documents/C++/ping-pong-2.0/" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:/Users/saabi/OneDrive/Documents/SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="appManager.cpp" />
+		<Unit filename="appManager.hpp" />
+		<Unit filename="ball.cpp" />
+		<Unit filename="ball.hpp" />
+		<Unit filename="cb.bmp" />
+		<Unit filename="constants.hpp" />
+		<Unit filename="endScreen.cpp" />
+		<Unit filename="endScreen.hpp" />
+		<Unit filename="gameManager.cpp" />
+		<Unit filename="gameManager.hpp" />
+		<Unit filename="gameScreen.cpp" />
+		<Unit filename="gameScreen.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="paddle.cpp" />
+		<Unit filename="paddle.hpp" />
+		<Unit filename="startScreen.cpp" />
+		<Unit filename="startScreen.hpp" />
+		<Unit filename="texts.cpp" />
+		<Unit filename="texts.hpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
